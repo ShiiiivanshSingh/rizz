@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOONCAVE - Explore Curated Content</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            width: 95%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        
+        /* Navigation Styles */
+        nav {
+            background-color: #555;
+            text-align: center;
+            padding: 10px 0;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav ul li {
+            margin-right: 15px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+            padding: 10px 15px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        
+        nav ul li a:hover {
+            background-color: #777;
+        }
+        
+        /* Main Content Styles */
+        .main-content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+        
+        .intro-section {
+            text-align: center;
+            padding: 40px 0;
+            background-color: #ffcc00;
+            color: #333;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+        
+        .intro-section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .intro-section p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        
+        /* Websites Section */
+        .websites-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-bottom: 40px;
+        }
+        
+        .website-item {
+            width: calc(25% - 20px);
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            background-color: #f9f9f9;
+        }
+        
+        .website-item:hover {
+            transform: translateY(-5px);
+            background-color: #fff;
+        }
+        
+        .website-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .website-item h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        .website-item p {
+            font-size: 14px;
+            line-height: 1.4;
+        }
+        
+        /* Social Media Section */
+        .social-media-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .social-media-section h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        
+        .social-icons {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .social-icons li {
+            margin-right: 10px;
+        }
+        
+        .social-icons li a {
+            display: block;
+            width: 40px;
+            height: 40px;
+            background-color: #333;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            color: #fff;
+            font-size: 20px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .social-icons li a:hover {
+            background-color: #777;
+        }
+        
+        /* About Section */
+        .about-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .about-section h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        
+        .about-section p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #555;
+            color: #fff;
+            position: relative;
+            clear: both;
+            margin-top: 20px;
+        }
+        
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#websites">Websites</a></li>
+                <li><a href="#social">Social Media</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <section id="home" class="main-content">
+            <div class="intro-section">
+                <h2>Welcome to GOONCAVE</h2>
+                <p>Discover curated content from your favorite websites and social media platforms.</p>
+            </div>
+            
+            <section id="websites" class="websites-section">
+                <div class="website-item">
+                    <a href="#" target="_blank">
+                        <img src="https://picsum.photos/400/300?random=1" alt="Website 1">
+                        <h3>Technology News</h3>
+                        <p>Stay updated with the latest trends and breakthroughs in technology.</p>
+                    </a>
+                </div>
+                <div class="website-item">
+                    <a href="#" target="_blank">
+                        <img src="https://picsum.photos/400/300?random=2" alt="Website 2">
+                        <h3>Business Insights</h3>
+                        <p>Explore strategies and news shaping the global business landscape.</p>
+                    </a>
+                </div>
+                <div class="website-item">
+                    <a href="#" target="_blank">
+                        <img src="https://picsum.photos/400/300?random=3" alt="Website 3">
+                        <h3>Health & Wellness</h3>
+                        <p>Get tips and updates on health, fitness, and wellness trends.</p>
+                    </a>
+                </div>
+                <div class="website-item">
+                    <a href="#" target="_blank">
+                        <img src="https://picsum.photos/400/300?random=4" alt="Website 4">
+                        <h3>Travel Destinations</h3>
+                        <p>Plan your next adventure with insights on travel destinations worldwide.</p>
+                    </a>
+                </div>
+            </section>
+            
+            <section id="social" class="social-media-section">
+                <h2>Connect with Us</h2>
+                <ul class="social-icons">
+                    <li><a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="#" title="YouTube"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </section>
+            
+            <section id="about" class="main-content">
+                <div class="about-section">
+                    <h2>About GOONCAVE</h2>
+                    <p>GOONCAVE brings together curated content across technology, business, health & wellness, and travel. Our mission is to provide insightful information that enriches your digital experience.</p>
+                    <p>Founded by Shivansh Pratap Singh in 2024, GOONCAVE aims to connect people with the latest trends and stories from around the world, ensuring you stay informed and inspired.</p>
+                </div>
+            </section>
+        </section>
+    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 GOONCAVE. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
